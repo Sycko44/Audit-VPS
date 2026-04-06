@@ -1,0 +1,10 @@
+{
+  "job_id": "job-20260407-001",
+  "payload": "payload.sh",
+  "sha256": "REPLACE_WITH_SHA256",
+  "signing_key_id": "trustplane-ed25519-main",
+  "created_at": "2026-04-07T12:00:00Z",
+  "policy_ref": "default-local-deny",
+  "secret_refs": [],
+  "receipts_to": "pulseo.me:/home/USER_OVH/agent_hub/receipts"
+}
