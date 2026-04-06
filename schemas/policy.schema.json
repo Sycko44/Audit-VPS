@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Audit-VPS Policy",
+  "type": "object",
+  "required": ["policy_id", "default", "trusted_signing_keys", "allowed_payload_kinds", "allowed_target_scopes", "allow_secret_resolution"],
+  "properties": {
+    "policy_id": {"type": "string"},
+    "default": {"type": "string", "enum": ["allow", "deny"]},
+    "trusted_signing_keys": {"type": "array", "items": {"type": "string"}},
+    "allowed_payload_kinds": {"type": "array", "items": {"type": "string"}},
+    "allowed_target_scopes": {"type": "array", "items": {"type": "string"}},
+    "allow_secret_resolution": {"type": "boolean"},
+    "notes": {"type": "string"}
+  }
+}
