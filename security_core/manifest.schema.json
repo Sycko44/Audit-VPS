@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Audit-VPS Job Manifest",
+  "type": "object",
+  "required": ["job_id", "payload", "sha256", "signing_key_id", "created_at", "policy_ref"],
+  "properties": {
+    "job_id": {"type": "string"},
+    "payload": {"type": "string"},
+    "sha256": {"type": "string"},
+    "signing_key_id": {"type": "string"},
+    "created_at": {"type": "string"},
+    "policy_ref": {"type": "string"},
+    "secret_refs": {"type": "array", "items": {"type": "string"}},
+    "receipts_to": {"type": "string"}
+  }
+}
