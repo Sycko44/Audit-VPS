@@ -1,0 +1,33 @@
+output/<host>/<timestamp>/
+  raw/
+    identity.txt
+    storage.txt
+    network.txt
+    dns_tls.txt
+    users_access.txt
+    persistence.txt
+    services.txt
+    apps_dev.txt
+    containers.txt
+    databases.txt
+    findings_first_pass.txt
+  maps/
+    objects.json
+    relationships.json
+    findings.json
+  manifests/
+    files_manifest.csv
+    hash_manifest.txt
+  previews/
+    ... text excerpts ...
+  summary/
+    summary.md
+    system_overview.md
+    architecture_map.md
+    exposure_map.md
+    control_map.md
+    dev_map.md
+    risk_report.md
+    remediation_candidates.md
+  logs/
+    run.log
