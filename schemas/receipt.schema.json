@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Audit-VPS Receipt",
+  "type": "object",
+  "required": ["job_id", "status", "policy_allow", "policy_reason", "payload_sha256", "manifest_sha256", "agent_id", "hub_host", "started_at", "finished_at", "exit_code", "attested", "signed"],
+  "properties": {
+    "job_id": {"type": "string"},
+    "status": {"type": "string"},
+    "policy_allow": {"type": "boolean"},
+    "policy_reason": {"type": "string"},
+    "payload_sha256": {"type": "string"},
+    "manifest_sha256": {"type": "string"},
+    "agent_id": {"type": "string"},
+    "hub_host": {"type": "string"},
+    "started_at": {"type": "string"},
+    "finished_at": {"type": "string"},
+    "exit_code": {"type": "integer"},
+    "attested": {"type": "boolean"},
+    "signed": {"type": "boolean"},
+    "secret_events": {"type": "array", "items": {"type": "string"}}
+  }
+}
