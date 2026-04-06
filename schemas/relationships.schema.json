@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AuditVPS Relationships",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["from", "to", "type", "confidence", "source_refs"],
+    "properties": {
+      "from": {"type": "string"},
+      "to": {"type": "string"},
+      "type": {"type": "string"},
+      "confidence": {"type": "number"},
+      "source_refs": {"type": "array", "items": {"type": "string"}}
+    }
+  }
+}
