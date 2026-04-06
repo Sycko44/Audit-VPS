@@ -1,0 +1,10 @@
+{
+  "policy_id": "default-local-deny",
+  "default": "deny",
+  "allow_if": [
+    "signature_valid",
+    "manifest_complete",
+    "trusted_signing_key",
+    "approved_payload_type"
+  ]
+}
