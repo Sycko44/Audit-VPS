@@ -1,0 +1,18 @@
+[Unit]
+Description=Audit-VPS autonomous agent V1.3
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/Audit-VPS
+Environment=AGENT_ID=termux-agent-01
+Environment=ALLOWED_SIGNERS=/home/ubuntu/Audit-VPS/keys/allowed_signers
+Environment=ENV_FILE=/home/ubuntu/Audit-VPS/transport/job.env.local
+ExecStart=/usr/bin/bash /home/ubuntu/Audit-VPS/integration/termux/agent_termux_v1_3.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
